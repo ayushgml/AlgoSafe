@@ -1,0 +1,88 @@
+.header {
+	background-color: #000000;
+	height: 85px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 20px;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+.header__logo {
+	width: 100px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: transparent;
+	padding: 5px;
+}
+
+.header__right {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 100%;
+	width: 300px;
+}
+
+.header__right__login {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 7px;
+	height: 30px;
+	width: 70px;
+	background-color: rgb(0, 0, 0);
+	border-radius: 10px;
+	outline: none;
+	cursor: pointer;
+	font-size: 1.2rem;
+	color: #fff;
+	font-weight: 600;
+	transition: all 0.3s ease;
+  border: 1px solid #fff;
+	text-decoration: none;
+}
+
+.header__right__signup {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 7px;
+	height: 30px;
+	width: 70px;
+	background-color: #007d00;
+	border-radius: 10px;
+	outline: none;
+	cursor: pointer;
+	font-size: 1.2rem;
+	color: #fff;
+	font-weight: 600;
+	transition: all 0.3s ease;
+	text-decoration: none;
+}
+
+.header__right__login:hover {
+	background-color: #fff;
+	color: #000;
+}
+
+.header__right__signup:hover {
+	background-color: #fff;
+	color: #007d00;
+	border: 1px solid #007d00;
+}
+
+@media screen and (max-width: 380px) {
+	.header__logo {
+		display: none;
+	}
+}
