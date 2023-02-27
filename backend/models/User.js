@@ -5,8 +5,8 @@ const userSchema = new mongo.Schema( {
     password: { type: String, required: true },
     date: { type: Date, default: Date.now },
     savedPasswordsTxns: { type: Array, default: [] },
-    algorandAddress: { type: String, default: "" },
-    algorandSecretKey: { type: String, default: "" },
+    algorandAccount: { type: Object, default: {} },
 } )
 
-module.exports = mongo.model( 'user', userSchema );
+const User = mongo.model( 'users', userSchema );
+module.exports = User;
