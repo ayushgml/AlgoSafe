@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Header.css";
 import logo from "../../assets/algorand_logo.png";
 import { Link } from "react-router-dom";
 
-function Header({ login, signup }) {
+function Header( { login, signup } ) {
+	
 	return (
 		<div className="header">
 			<div className="header__left">

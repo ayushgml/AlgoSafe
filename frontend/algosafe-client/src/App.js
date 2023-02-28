@@ -6,18 +6,19 @@ import { useState, useEffect } from "react";
 import Login from "./components/Login/Login";
 import SignUp from "./components/SignUp/SignUp";
 import Home from "./components/Home/Home";
+import CurrentUserProvider from "./context/CurrentUserContext"
 
 function App() {
 	return (
-		<Router>
-			<div className="App">
-				<Routes>
-          <Route path="/" element={ <Home /> } />
-          <Route path="/login" element={ <Login /> } />
-          <Route path="/signup" element={ <SignUp /> } />
-				</Routes>
-			</div>
-		</Router>
+		<CurrentUserProvider>
+			<Router>
+					<Routes>
+						<Route path="/" element={<Home />} />
+						<Route path="/login" element={<Login />} />
+						<Route path="/signup" element={<SignUp />} />
+					</Routes>
+			</Router>
+		</CurrentUserProvider>
 	);
 }
 

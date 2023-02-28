@@ -1,5 +1,110 @@
-.signup{
+.login{
   height: 100vh;
 	width: 100vw;
 	background: linear-gradient(to top, #007d00, rgb(0, 0, 0));
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.login__container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 500px;
+	width: 400px;
+	background-color: #000000;
+	border-radius: 10px;
+	color: white;
+}
+
+.login__container__form{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-evenly;
+	height: 70%;
+	width: 80%;
+	margin: 3px;
+	padding: 3px;
+	margin-top: -15px;
+}
+
+.login__container__part{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	height: 30%;
+	width: 87.5%;
+	font-size: 1.5rem;
+}
+
+.login__container__label{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	height: 30%;
+	width: 87.5%;
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+.login__container__input{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 30px;
+	width: 87.5%;
+	font-size: 1.2rem;
+	font-weight: 400;
+	margin-top: -20px;
+	border: 1px solid white;
+	outline: none;
+	border-radius: 5px;
+	padding: 3px;
+	width: 110%;
+	background: transparent;
+	color: white;
+}
+
+.login__container__input:focus{
+	border: 1px solid #007d00;
+	background: transparent;
+}
+
+.login__container__input:active{
+	border: 1px solid #007d00;
+	background: transparent;
+}
+
+.login__signInButton{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 35px;
+	width: 80px;
+	font-size: 1.2rem;
+	font-weight: 400;
+	margin-top: 15px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	padding: 3px;
+	background-color: #007d00;
+	color: white;
+	margin-inline: auto;
+	transition: all 0.2s ease-in-out;
+}
+
+.login__signInButton:hover{
+	background-color: white;
+	color: #007d00;
+	cursor: pointer;
+	border: 1px solid #007d00;
 }
