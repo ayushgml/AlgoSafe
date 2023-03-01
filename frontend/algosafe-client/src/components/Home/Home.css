@@ -74,3 +74,86 @@
 	font-weight: 900;
 	border-bottom: 2px solid white;
 }
+
+.home__not__logged__in{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+	font-weight: 900;
+	color: white;
+}
+
+.form_pass{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.savefor{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.label{
+	margin-bottom: 0px;
+}
+
+.input{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 30px;
+	width: 200px;
+	font-size: 1.2rem;
+	font-weight: 400;
+	margin-top: -20px;
+	border: 1px solid white;
+	outline: none;
+	border-radius: 5px;
+	padding: 3px;
+	background: transparent;
+	color: white;
+}
+
+.input:focus{
+	border: 1px solid #007d00;
+	background: transparent;
+}
+
+.input:active{
+	border: 1px solid #007d00;
+	background: transparent;
+}
+
+.savepass_Button{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 35px;
+	width: 180px;
+	font-size: 1.2rem;
+	font-weight: 400;
+	margin-top: -5px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	padding: 3px;
+	background-color: #007d00;
+	color: white;
+	margin-inline: auto;
+	transition: all 0.2s ease-in-out;
+}
+
+.savepass_Button:hover{
+	background-color: white;
+	color: #007d00;
+	cursor: pointer;
+	border: 1px solid #007d00;
+}

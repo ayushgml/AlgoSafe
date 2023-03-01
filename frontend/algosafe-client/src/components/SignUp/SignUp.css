@@ -108,3 +108,23 @@
 	cursor: pointer;
 	border: 1px solid #007d00;
 }
+
+.login__success{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 20px;
+	font-size: 1.3rem;
+	font-weight: 400;
+	color: #ffffff;
+}
+
+.login__success__text{
+	text-decoration: none;
+	color: #ffffff;
+	transition: all 0.2s ease-in-out;
+}
+
+.login__success__text:hover{
+	font-size: 1.4rem;
+}

@@ -3,8 +3,12 @@ import "./Header.css";
 import logo from "../../assets/algorand_logo.png";
 import { Link } from "react-router-dom";
 
-function Header( { login, signup } ) {
-	
+function Header({ login, signup }) {
+	const handleLogout = () => {
+		localStorage.setItem("algorand_password_manager_token", "");
+		window.location.reload();
+	};
+
 	return (
 		<div className="header">
 			<div className="header__left">
@@ -13,18 +17,27 @@ function Header( { login, signup } ) {
 				</Link>
 			</div>
 			<div className="header__right">
-				{login && (
-					<div>
-						<Link to="/login" className="header__right__login">
-							Login
-						</Link>
+				{localStorage.getItem("algorand_password_manager_token") !== "" && (
+					<div className="header__right__login" onClick={handleLogout}>
+						Logout
 					</div>
 				)}
-				{signup && (
-					<div>
-						<Link to="/signup" className="header__right__signup">
-							Sign Up
-						</Link>
+				{localStorage.getItem("algorand_password_manager_token") === "" && (
+					<div className="header__right">
+						{login && (
+							<div>
+								<Link to="/login" className="header__right__login">
+									Login
+								</Link>
+							</div>
+						)}
+						{signup && (
+							<div>
+								<Link to="/signup" className="header__right__signup">
+									Sign Up
+								</Link>
+							</div>
+						)}
 					</div>
 				)}
 			</div>

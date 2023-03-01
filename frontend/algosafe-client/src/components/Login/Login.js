@@ -38,12 +38,10 @@ function Login() {
 
   const handleEmailChange = ( event ) => {
     setEmail( event.target.value );
-    console.log("Email: "+event.target.value)
   }
 
   const handlePasswordChange = ( event ) => {
     setPassword(event.target.value);
-    console.log("Password: "+event.target.value)
   }
 
   const handleSubmit = ( event ) => {

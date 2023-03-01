@@ -21,28 +21,25 @@ function SignUp() {
 			});
 			const data = await response.json();
 			console.log(data);
-			if (data.message === "User logged in successfully") {
+			if (data.message === "User created successfully") {
 				setSuccessLogin(true);
 			}
 		}
 		if (submit) {
 			login();
 		}
-  }, [ submit ] );
-  
-  const handleNameChange = (event) => {
+	}, [submit]);
+
+	const handleNameChange = (event) => {
 		setName(event.target.value);
-		console.log("Name: " + event.target.value);
 	};
 
 	const handleEmailChange = (event) => {
 		setEmail(event.target.value);
-		console.log("Email: " + event.target.value);
 	};
 
 	const handlePasswordChange = (event) => {
 		setPassword(event.target.value);
-		console.log("Password: " + event.target.value);
 	};
 
 	const handleSubmit = (event) => {
@@ -89,6 +86,13 @@ function SignUp() {
 					</button>
 				</form>
 			</div>
+			{ successLogin && (
+			<div className="login__success">
+					<Link to="/login" className="login__success__text">
+						You have successfully signed up! Please login to continue.
+					</Link>
+			</div>
+			) }
 		</div>
 	);
 }
