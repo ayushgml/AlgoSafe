@@ -2,9 +2,10 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a>
+    <img src="https://user-images.githubusercontent.com/72748253/222067760-ecb4b1ed-10c9-45a2-825e-d2b7f1d5c2d1.png" alt="Logo" width="80" height="80">
   </a>
+<!-- <img width="1536" alt="Screenshot 2023-03-01 at 12 03 37 PM" src="https://user-images.githubusercontent.com/72748253/222067760-ecb4b1ed-10c9-45a2-825e-d2b7f1d5c2d1.png"> -->
 
   <h3 align="center">AlgoSafe</h3>
 
