@@ -3,7 +3,7 @@
 <br />
 <div align="center">
   <a>
-    <img src="https://user-images.githubusercontent.com/72748253/222067760-ecb4b1ed-10c9-45a2-825e-d2b7f1d5c2d1.png" alt="Logo" width="80" height="20">
+    <img src="/frontend/algosafe-client/src/assets/algorand_logo.png" alt="Logo" width="80" height="20">
   </a>
 
   <h3 align="center">AlgoSafe</h3>
