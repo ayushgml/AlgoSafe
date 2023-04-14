@@ -4,6 +4,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 const algosdk = require("algosdk");
 
+// Sample Algorand account
 const myAccount = {
 	addr: "LVRIHBMGFA7YUSXDITNY6VU3N7OPFX7DV2VQCKZGS6OJMN7YBMMYYNQQME",
 	sk: new Uint8Array([
@@ -58,10 +59,6 @@ const login = async (req, res) => {
 		if (!isMatch) {
 			return res.status(400).json({ message: "Invalid credentials" });
 		}
-		// const secretKeyisMatch = await bcrypt.compare(secretKey, alreadyExists.algorandAccount.sk);
-		// if ( !secretKeyisMatch ) {
-		// 	return res.status(400).json({ message: "The Algorand secret key you entered was incorrect!" });
-		// }
 		res.status(200).json({ message: "User logged in successfully" });
 	} catch (error) {
 		console.log(error);
@@ -150,9 +147,12 @@ const getSavedPasswords = async (req, res) => {
 		const savedPasswords = [];
 		for (let i = 0; i < user.savedPasswordsTxns.length; i++) {
 			const savedFor = user.savedPasswordsTxns[i].for;
-			const txnInfo = user.savedPasswordsTxns[i].tnx_info;
-			const string = txnInfo.txn.txn.note.toString();
-			savedPasswords.push({ for: savedFor, password: string });
+			const txnInfo = user.savedPasswordsTxns[ i ].tnx_info;
+			var string = ""
+			if ( txnInfo.txn.txn.note ) {
+				string = txnInfo.txn.txn.note.toString();
+				savedPasswords.push({ for: savedFor, password: string });
+			}
 		}
 		res.status(200).json({ savedPasswords: savedPasswords });
 	} catch (error) {
@@ -160,6 +160,9 @@ const getSavedPasswords = async (req, res) => {
 		res.status(500).send("Internal Server Error");
 	}
 };
+
+
+
 
 const deletePassword = async (req, res) => {
 	try {
