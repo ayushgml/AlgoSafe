@@ -51,15 +51,15 @@
 
 <!--[![Product Name Screen Shot][product-screenshot]](https://user-images.githubusercontent.com/72748253/222063575-52266b25-c27d-43c9-a8c1-d62b3a030f79.png)-->
 
-Our project is a password manager built on the Algorand blockchain platform. The password manager utilizes the security and transparency of the blockchain technology to ensure that our clients' passwords are encrypted and secure.
+This project is a password manager built on the Algorand blockchain platform. The password manager utilizes the security and transparency of the blockchain technology to ensure that the clients' passwords are encrypted and secure.
 
-With our password manager, users can easily generate and store strong passwords for their various online accounts. The passwords are encrypted using the Algorand blockchain, which means that only the user can access their passwords, and even we as the service provider cannot access them.
+With this password manager, users can easily generate and store strong passwords for their various online accounts. The passwords are encrypted using the Algorand blockchain, which means that only the user can access their passwords, and even we as the service provider cannot access them.
 
-Our password manager is easy to use and comes with a user-friendly interface that allows clients to store, organize and manage their passwords securely. In addition, the password manager has a backup and recovery feature that ensures that clients never lose their passwords.
+this password manager is easy to use and comes with a user-friendly interface that allows clients to store, organize and manage their passwords securely. In addition, the password manager has a backup and recovery feature that ensures that clients never lose their passwords.
 
-By leveraging the decentralized nature of the Algorand blockchain, our password manager provides an extra layer of security that traditional password managers do not offer. This is because our platform ensures that no one, including us as the service provider, has access to clients' passwords.
+By leveraging the decentralized nature of the Algorand blockchain, the password manager provides an extra layer of security that traditional password managers do not offer. This is because the platform ensures that no one, including us as the service provider, has access to clients' passwords.
 
-Overall, our Algorand-based password manager offers a secure, reliable, and easy-to-use solution for individuals and businesses to manage their passwords.
+Overall, the Algorand-based password manager offers a secure, reliable, and easy-to-use solution for individuals and businesses to manage their passwords.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
